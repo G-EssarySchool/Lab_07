@@ -12,13 +12,12 @@ public class Task3 {
         System.out.println("------------------------------------------------");
 
         do {
-            die1 = rand.nextInt(6) + 1;  // Random 1–6
+            die1 = rand.nextInt(6) + 1;
             die2 = rand.nextInt(6) + 1;
             die3 = rand.nextInt(6) + 1;
             sum = die1 + die2 + die3;
             rollCount++;
 
-            // Print results of each roll
             System.out.printf("%-10d%-10d%-10d%-10d%-10d%n", rollCount, die1, die2, die3, sum);
 
         } while (!(die1 == die2 && die2 == die3));
